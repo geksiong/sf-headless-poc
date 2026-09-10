@@ -1,6 +1,24 @@
 {
   "version": 1,
   "skills": {
+    "agentforce-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/agentforce-generate/SKILL.md",
+      "computedHash": "6bccfcd066549df0daa6d2b2245e4491f20537cf10a0d275ee9cec188ecc22c7"
+    },
+    "agentforce-observe": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/agentforce-observe/SKILL.md",
+      "computedHash": "d4a4b3d18b8ecd5e259d864f0816549c4f7a3d90f13a109761ce96a0e390841b"
+    },
+    "agentforce-test": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/agentforce-test/SKILL.md",
+      "computedHash": "4da0282cb6a339eab3516640de484091f02b7e227a0e5a12f1d50023f06f509b"
+    },
     "platform-lightning-type-widget-coordinate": {
       "source": "forcedotcom/sf-skills",
       "sourceType": "github",
