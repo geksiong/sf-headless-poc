@@ -1,0 +1,72 @@
+{
+  "title": "Top Opportunities",
+  "description": "Summarises the top 5 opportunities ranked by amount.",
+  "type": "object",
+  "properties": {
+    "attributes": {
+      "lightning:type": "lightning__objectType",
+      "properties": {
+        "opportunities": {
+          "title": "Opportunities",
+          "description": "List of top opportunities to display.",
+          "lightning:type": "lightning__listType",
+          "items": {
+            "lightning:type": "lightning__objectType",
+            "properties": {
+              "name": {
+                "title": "Name",
+                "description": "Opportunity name.",
+                "lightning:type": "lightning__textType"
+              },
+              "account": {
+                "title": "Account",
+                "description": "Associated account name.",
+                "lightning:type": "lightning__textType"
+              },
+              "contact": {
+                "title": "Contact",
+                "description": "Primary contact on the opportunity.",
+                "lightning:type": "lightning__textType"
+              },
+              "description": {
+                "title": "Description",
+                "description": "Opportunity description.",
+                "lightning:type": "lightning__textType"
+              },
+              "amount": {
+                "title": "Amount",
+                "description": "Deal amount in currency.",
+                "lightning:type": "lightning__numberType"
+              },
+              "owner": {
+                "title": "Owner",
+                "description": "Opportunity owner name.",
+                "lightning:type": "lightning__textType"
+              },
+              "closeDate": {
+                "title": "Close Date",
+                "description": "Expected close date.",
+                "lightning:type": "lightning__textType"
+              },
+              "stage": {
+                "title": "Stage",
+                "description": "Current sales stage.",
+                "lightning:type": "lightning__textType"
+              },
+              "probability": {
+                "title": "Probability",
+                "description": "Win probability percentage.",
+                "lightning:type": "lightning__numberType"
+              },
+              "expectedRevenue": {
+                "title": "Expected Revenue",
+                "description": "Expected revenue amount.",
+                "lightning:type": "lightning__numberType"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
