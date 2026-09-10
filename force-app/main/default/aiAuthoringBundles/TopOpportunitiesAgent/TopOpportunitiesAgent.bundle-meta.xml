@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AiAuthoringBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TopOpportunitiesAgent</fullName>
+    <type>AGENT</type>
+    <status>Draft</status>
+    <label>Top Opportunities Agent</label>
+    <description>An agent that retrieves and displays the top open opportunities ranked by amount with key details including account, contact, owner, stage, and expected revenue.</description>
+</AiAuthoringBundle>
