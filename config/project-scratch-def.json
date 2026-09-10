@@ -1,13 +1,19 @@
 {
-  "orgName": "gs company",
+  "orgName": "Salesforce Headless 360 POC",
   "edition": "Developer",
-  "features": ["EnableSetPasswordInApi"],
+  "features": [
+    "EnableSetPasswordInApi",
+    "Einstein1AIPlatform"
+  ],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
     },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
+    },
+    "einsteinGptSettings": {
+      "enableEinsteinGptPlatform": true
     }
   }
 }
