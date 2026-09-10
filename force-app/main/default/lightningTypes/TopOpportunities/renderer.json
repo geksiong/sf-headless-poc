@@ -1,0 +1,12 @@
+{
+  "renderer": {
+    "componentOverrides": {
+      "$": {
+        "definition": "@widget/c/TopOpportunities",
+        "attributes": {
+          "opportunities": "{!$attrs.opportunities}"
+        }
+      }
+    }
+  }
+}

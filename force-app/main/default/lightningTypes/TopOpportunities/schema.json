@@ -1,0 +1,5 @@
+{
+  "title": "Top Opportunities",
+  "description": "Top five open opportunities ranked by amount with key details.",
+  "lightning:type": "@apexClassType/c__TopOpportunities"
+}
