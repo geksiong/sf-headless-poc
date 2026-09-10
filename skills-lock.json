@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "platform-lightning-type-widget-coordinate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-lightning-type-widget-coordinate/SKILL.md",
+      "computedHash": "085b5df16563c7075c2a71f0cd058bcf2424be0bd1c4bfcfc0993476eade4044"
+    },
+    "platform-mcp-tool-widget-coordinate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-mcp-tool-widget-coordinate/SKILL.md",
+      "computedHash": "4f49e6930afd78456f97dca8a7f14ae191badbba2fce85ca5e05b548fa9d1dca"
+    },
+    "platform-widget-generate": {
+      "source": "forcedotcom/sf-skills",
+      "sourceType": "github",
+      "skillPath": "skills/platform-widget-generate/SKILL.md",
+      "computedHash": "a9cbcd743fea6741a04f6d63cb7eb2d7cda20f6962ae4aeeaadf40e86bd6b4b4"
+    }
+  }
+}
