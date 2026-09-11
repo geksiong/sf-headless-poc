@@ -41,7 +41,7 @@ start_agent main:
                     description: "Contains the list of top opportunities with details"
                     is_displayable: True
                     filter_from_agent: False
-                    complex_data_type_name: "@apexClassType/c__TopOpportunities"
+                    complex_data_type_name: "c__TopOpportunities"
 
     reasoning:
         instructions: ->

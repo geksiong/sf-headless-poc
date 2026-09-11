@@ -1,0 +1,204 @@
+{
+  "records": [
+    {
+      "attributes": { "type": "Account", "reference": "sample_acct_0" },
+      "Name": "Adventure Trail Company (Sample)",
+      "Industry": "Outdoor Recreation",
+      "BillingCity": "Denver",
+      "BillingCountry": "United States",
+      "Description": "Sample outdoor adventure equipment retailer.",
+      "Opportunities": {
+        "records": [
+          {
+            "attributes": { "type": "Opportunity", "reference": "sample_opp_0" },
+            "Name": "Adventure Gear Q4 Deal",
+            "StageName": "Prospecting",
+            "CloseDate": "2026-10-11",
+            "Amount": 15000,
+            "Description": "Q4 bulk order for hiking gear and accessories"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Account", "reference": "sample_acct_1" },
+      "Name": "Back Country Outpost (Sample)",
+      "Industry": "Outdoor Recreation",
+      "BillingCity": "Boulder",
+      "BillingCountry": "United States",
+      "Description": "Sample backcountry expedition supply company.",
+      "Opportunities": {
+        "records": [
+          {
+            "attributes": { "type": "Opportunity", "reference": "sample_opp_1" },
+            "Name": "Back Country Fleet Upgrade",
+            "StageName": "Qualification",
+            "CloseDate": "2026-10-26",
+            "Amount": 42000,
+            "Description": "Fleet equipment upgrade for field operations"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Account", "reference": "sample_acct_2" },
+      "Name": "Get Outside Suppliers (Sample)",
+      "Industry": "Recreational Facilities",
+      "BillingCity": "Portland",
+      "BillingCountry": "United States",
+      "Description": "Sample outdoor recreation equipment supplier.",
+      "Opportunities": {
+        "records": [
+          {
+            "attributes": { "type": "Opportunity", "reference": "sample_opp_2" },
+            "Name": "Get Outside Season Pass Bundle",
+            "StageName": "Needs Analysis",
+            "CloseDate": "2026-11-10",
+            "Amount": 8500,
+            "Description": "Season pass bundle deal for outdoor tours"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Account", "reference": "sample_acct_3" },
+      "Name": "National Parks Gear (Sample)",
+      "Industry": "Government",
+      "BillingCity": "Washington",
+      "BillingCountry": "United States",
+      "Description": "Sample national park equipment procurement.",
+      "Opportunities": {
+        "records": [
+          {
+            "attributes": { "type": "Opportunity", "reference": "sample_opp_3" },
+            "Name": "National Parks Partnership",
+            "StageName": "Proposal/Price Quote",
+            "CloseDate": "2026-10-01",
+            "Amount": 125000,
+            "Description": "Multi-year partnership for park supply chain"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Account", "reference": "sample_acct_4" },
+      "Name": "River Mountain Outfitters (Sample)",
+      "Industry": "Outdoor Recreation",
+      "BillingCity": "Boise",
+      "BillingCountry": "United States",
+      "Description": "Sample outdoor outfitter and gear retailer.",
+      "Opportunities": {
+        "records": [
+          {
+            "attributes": { "type": "Opportunity", "reference": "sample_opp_4" },
+            "Name": "River Outfitters Expansion",
+            "StageName": "Negotiation/Review",
+            "CloseDate": "2026-09-25",
+            "Amount": 67000,
+            "Description": "Regional expansion - new distribution center"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Account", "reference": "sample_acct_5" },
+      "Name": "Trailblazer Unlimited (Sample)",
+      "Industry": "Technology",
+      "BillingCity": "San Francisco",
+      "BillingCountry": "United States",
+      "Description": "Sample enterprise technology and outdoor platform.",
+      "Opportunities": {
+        "records": [
+          {
+            "attributes": { "type": "Opportunity", "reference": "sample_opp_5" },
+            "Name": "Trailblazer Enterprise License",
+            "StageName": "Closed Won",
+            "CloseDate": "2026-09-06",
+            "Amount": 95000,
+            "Description": "Annual enterprise software license renewal"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Account", "reference": "sample_acct_6" },
+      "Name": "Trail Expert Co. (Sample)",
+      "Industry": "Consulting",
+      "BillingCity": "Seattle",
+      "BillingCountry": "United States",
+      "Description": "Sample outdoor trail consulting and mapping.",
+      "Opportunities": {
+        "records": [
+          {
+            "attributes": { "type": "Opportunity", "reference": "sample_opp_6" },
+            "Name": "Trail Expert Consulting",
+            "StageName": "Prospecting",
+            "CloseDate": "2026-12-10",
+            "Amount": 22000,
+            "Description": "Consulting engagement for trail mapping project"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Account", "reference": "sample_acct_7" },
+      "Name": "Trailhead Outdoor Supply (Sample)",
+      "Industry": "Wholesale",
+      "BillingCity": "Phoenix",
+      "BillingCountry": "United States",
+      "Description": "Sample wholesale outdoor equipment distributor.",
+      "Opportunities": {
+        "records": [
+          {
+            "attributes": { "type": "Opportunity", "reference": "sample_opp_7" },
+            "Name": "Trailhead Outdoor Wholesale",
+            "StageName": "Qualification",
+            "CloseDate": "2026-10-31",
+            "Amount": 33000,
+            "Description": "Wholesale supply agreement for retail locations"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Account", "reference": "sample_acct_8" },
+      "Name": "Trail Ranger Outfitters (Sample)",
+      "Industry": "Outdoor Recreation",
+      "BillingCity": "Salt Lake City",
+      "BillingCountry": "United States",
+      "Description": "Sample ranger gear and outdoor equipment retailer.",
+      "Opportunities": {
+        "records": [
+          {
+            "attributes": { "type": "Opportunity", "reference": "sample_opp_8" },
+            "Name": "Ranger Outfitters Digital",
+            "StageName": "Needs Analysis",
+            "CloseDate": "2026-11-25",
+            "Amount": 18500,
+            "Description": "Digital transformation initiative for e-commerce"
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Account", "reference": "sample_acct_9" },
+      "Name": "Trek the Trail (Sample)",
+      "Industry": "Recreational Facilities",
+      "BillingCity": "Flagstaff",
+      "BillingCountry": "United States",
+      "Description": "Sample guided hiking and trekking experience provider.",
+      "Opportunities": {
+        "records": [
+          {
+            "attributes": { "type": "Opportunity", "reference": "sample_opp_9" },
+            "Name": "Trek the Trail Summer Campaign",
+            "StageName": "Closed Lost",
+            "CloseDate": "2026-08-12",
+            "Amount": 52000,
+            "Description": "Summer marketing campaign - lost to competitor"
+          }
+        ]
+      }
+    }
+  ]
+}
