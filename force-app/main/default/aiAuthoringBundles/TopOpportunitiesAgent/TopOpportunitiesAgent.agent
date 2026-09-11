@@ -27,9 +27,14 @@ start_agent main:
 
     actions:
         get_top_opportunities:
-            description: "Retrieves the top five open opportunities ranked by amount with key details"
+            description: "Retrieves the top open opportunities ranked by amount with key details"
             label: "Get Top Opportunities"
             target: "apex://TopOpportunities"
+            inputs:
+                limitCount: integer
+                    description: "Maximum number of top opportunities to return. Defaults to 5 when not specified."
+                    label: "Result Limit"
+                    is_required: False
             outputs:
                 payload: object
                     label: "Opportunities Payload"
@@ -41,15 +46,17 @@ start_agent main:
     reasoning:
         instructions: ->
             | When the user asks to see top opportunities, call the get_top_opportunities
-              action to retrieve the data. The action returns a payload containing a list
-              of opportunities with their details (name, account, contact, amount, stage,
-              owner, close date, probability, and expected revenue).
+              action to retrieve the data. Use the optional limitCount input when the user
+              requests a specific number of results; otherwise it defaults to the top 5.
+              The action returns a payload containing a list of opportunities with their
+              details (name, account, contact, amount, stage, owner, close date,
+              probability, and expected revenue).
             | Present the opportunities in a clear, organized manner highlighting the
               most important details like opportunity name, amount, and stage.
             | If the user asks for opportunities, always call the action - do not make up
               data. If the action fails, inform the user and suggest trying again.
-            | For questions about specific opportunity details not in the top 5, let the
-              user know you can only show the top 5 opportunities ranked by amount.
+            | For questions about opportunity details beyond the returned ranked list, let the
+              user know the agent shows the top opportunities ranked by amount.
             | If the request is outside scope, briefly redirect to your core purpose of
               showing top opportunities.
 

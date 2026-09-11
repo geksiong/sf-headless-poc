@@ -1,17 +1,34 @@
 public with sharing class TopOpportunities {
 
-    @InvocableMethod(label='Get Top Opportunities' description='Returns the top five open opportunities ranked by amount with key details.')
-    public static List<TopOpportunitiesResult> getTopOpportunities() {
+    public class Request {
+        @InvocableVariable(
+            label='Result Limit'
+            description='Maximum number of top opportunities to return. Defaults to 5 when not specified.'
+            required=false
+        )
+        public Integer limitCount;
+    }
+
+    @InvocableMethod(label='Get Top Opportunities' description='Returns the top open opportunities ranked by amount with key details.')
+    public static List<TopOpportunitiesResult> getTopOpportunities(List<Request> requests) {
+        Integer limitCount = 5;
+        if (requests != null && !requests.isEmpty()) {
+            Request req = requests[0];
+            if (req.limitCount != null && req.limitCount > 0) {
+                limitCount = req.limitCount;
+            }
+        }
         List<TopOpportunity> items = new List<TopOpportunity>();
-        for (Opportunity opp : [
+        List<Opportunity> opportunities = [
             SELECT Name, Account.Name, Description, Amount, Owner.Name,
-                   CloseDate, StageName, Probability, ExpectedRevenue,
+                   CloseDate, StageName, Probability,
                    (SELECT Contact.Name FROM OpportunityContactRoles WHERE IsPrimary = true LIMIT 1)
             FROM Opportunity
             WHERE IsClosed = false
             ORDER BY Amount DESC NULLS LAST
-            LIMIT 5
-        ]) {
+            LIMIT :limitCount
+        ];
+        for (Opportunity opp : opportunities) {
             String contactName = opp.OpportunityContactRoles.isEmpty()
                 ? ''
                 : opp.OpportunityContactRoles[0].Contact.Name;
@@ -25,7 +42,7 @@ public with sharing class TopOpportunities {
                 opp.CloseDate?.format() ?? '',
                 opp.StageName,
                 opp.Probability ?? 0,
-                opp.ExpectedRevenue ?? 0
+                (opp.Amount ?? 0) * (opp.Probability ?? 0) / 100
             ));
         }
         TopOpportunities payload = new TopOpportunities();
