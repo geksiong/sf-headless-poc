@@ -5,19 +5,16 @@ system:
         When the user asks to see top opportunities, call the getTopOpportunities action
         to retrieve the data, then present it clearly. Keep responses focused on
         opportunity-related queries. For unrelated requests, briefly redirect to your
-        core purpose. Transfer to a human only when explicitly requested.
+        core purpose of showing top opportunities.
     messages:
         welcome: "Hello! I'm your sales assistant. I can help you view your top opportunities ranked by amount. What would you like to know?"
         error: "I'm sorry, I encountered an issue while retrieving the opportunities. Please try again."
-
-access:
-    default_agent_user: "placeholder@salesforce.com"
 
 config:
     developer_name: "TopOpportunitiesAgent"
     agent_label: "Top Opportunities Agent"
     description: "An agent that retrieves and displays the top open opportunities ranked by amount with key details including account, contact, owner, stage, and expected revenue."
-    agent_type: "AgentforceServiceAgent"
+    agent_type: "AgentforceEmployeeAgent"
 
 language:
     default_locale: "en_US"
@@ -55,10 +52,6 @@ start_agent main:
               user know you can only show the top 5 opportunities ranked by amount.
             | If the request is outside scope, briefly redirect to your core purpose of
               showing top opportunities.
-            | If the user explicitly asks for a human, transfer without also answering
-              the underlying request.
 
         actions:
             get_top_opportunities: @actions.get_top_opportunities
-            escalate_to_human: @utils.escalate
-                description: "Transfer only when the user explicitly requests a human"
